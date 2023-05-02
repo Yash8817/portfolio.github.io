@@ -801,7 +801,7 @@
         <div class="col-twelve">
           <!-- form -->
           <!-- action="https://formspree.io/f/mdobyear" -->
-          <form name="form" id="contactForm" method="POST" >
+          <form name="form" id="contactForm" method="POST" data-netlify="true">
             {% csrf_token %}
             <fieldset><div class="form-field">
                 <input name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" />
