@@ -1,939 +1,648 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html class="no-js" lang="en">
-  <!--<![endif]-->
-  <head>
-	  
-	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8676912543443134"
-     crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--ADSENSE-->
-    <!--     <script data-ad-client="ca-pub-1642640364155791" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <meta name="google-site-verification" content="02wm8dMp79FlxOu-QNCovzR5Sdqrn-DnoaZ7fzDLMpg" /> -->
+<head>
+
     <!--- basic page needs
-   ================================================== -->
-    <meta charset="utf-8" />
-    <title>Yash Prajapati | Full-stack developer</title>
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Yash Prajapati - Software Engineer</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
     <!-- mobile specific metas
-   ================================================== -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-      />
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS
-   ================================================== -->
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="add.txt" />
-    <link rel="stylesheet" href="css/vendor.css" />
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
 
     <!-- script
-   ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer
-      type="text/javascript"></script>
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153937526-1"></script> -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-153937526-1");
-    </script>
-    <!-- favicons ================================================== -->
-    <link rel="icon" href="favicon.jpg" />
-  </head>
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.jpg">
+    <link rel="manifest" href="site.webmanifest">
 
-  <body id="top">
-    <!-- header 
-   ================================================== -->
-    <header>
-      <div class="">
-        <div class="bar">
-          <a class="menu-toggle" href="#"><span>Menu</span></a>
+</head>
 
-          <div class="logo">
-            <a href="index.html">yash</a>
-          </div>
+<body id="top" class="ss-preload">
 
-          <nav id="main-nav-wrap">
-            <ul class="main-navigation">
-              <li class="current">
-                <a class="smoothscroll" href="#intro" title="">Home</a>
-              </li>
-              <li><a class="smoothscroll" href="#about" title="">About</a></li>
-              <li>
-                <a class="smoothscroll" href="#resume" title="">Resume</a>
-              </li>
-              <li>
-                <a class="smoothscroll" href="#portfolio" title="">Portfolio</a>
-              </li>
-              <li>
-                <a class="smoothscroll" href="#contact" title="">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- /top-bar -->
-      </div>
-      <!-- /row -->
-    </header>
-    <!-- /header -->
 
-    <!-- intro section
-   ================================================== -->
-    <section id="intro">
-      <div class="intro-overlay"></div>
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
 
-      <div class="intro-content">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+                    <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+                    <li><a class="smoothscroll" href="#contact">Say Hello</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
+        
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>I'm Yash Prajapati.</h1>
+
+                    <h3>
+                        I'm a <span>software engineer</span> specializing in <span>web development</span>, with skills in <span>AngularJS, JavaScript, jQuery, and PHP</span>. My full-stack expertise bridges <span>front-end</span> and <span>back-end development</span>. Scroll down to discover more about me.
+                    </h3>
+
+                    <div class="s-hero__content-social">
+                        <a href="https://www.linkedin.com/in/prajapatiyash/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://github.com/yash8817"><i class="fab fa-github" aria-hidden="true"></i></i></a>
+                        <a href="https://medium.com/@prajapatiyash8817"><i class="fab fa-medium" aria-hidden="true"></i></i></a>
+                        <a href="https://stackoverflow.com/users/15392294/prajapati-yash"><i class="fab fa-stack-overflow" aria-hidden="true"></i></i></a>
+                        <a href="https://www.instagram.com/yash_8817"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
+            </div>
+        </div> <!-- s-hero__content -->
+
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
         <div class="row">
-          <div class="col-twelve">
-            <h5>Hello, World.</h5>
-            <h1>
-              I<span style="color: #cc005f">'</span>m Yash Prajapati<span
-                style="color: #cc005f">.</span>
-            </h1>
-
-            <p class="intro-position">
-              <span>python Developer</span>
-            </p>
-
-            <a class="button stroke smoothscroll" href="#about" title="">More
-              About Me</a>
-          </div>
-        </div>
-      </div>
-      <!-- /intro-content -->
-
-      <ul class="intro-social">
-        <li>
-          <a href="https://www.linkedin.com/in/prajapati-yash-700bb4234/"><i
-              class="fa fa-linkedin"></i></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/yash_8817/"><i class="fa
-              fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/Yash8817"><i class="fa fa-github"></i></a>
-        </li>
-
-        <li>
-          <a href="https://www.hackerrank.com/prajapatiyash881"><i class="fab
-              fa-hackerrank"></i></a>
-        </li>
-
-      </ul>
-      <!-- /intro-social -->
-    </section>
-    <!-- /intro -->
-
-    <!-- about section
-   ================================================== -->
-    <section id="about">
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>About</h5>
-          <h2>Let me introduce myself.</h2>
-
-          <div class="intro-info">
-            <img src="images/profile-pic3.jpg" alt="yash Prajapati Picture" />
-            <p class="lead">
-              "There is no substitute for
-              <font color="#FF0077">hard work</font>."
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- /section-intro -->
-
-      <div class="row about-content">
-        <div class="col-six tab-full">
-          <h3>Profile</h3>
-          <p>
-            A BCA student from somlalit collage , Gujarat university with
-            excellent academic background and diverse skillset. Experienced in
-            Web Development. I am well versed in python and PHP
-          </p>
-
-          <ul class="info-list">
-            <li>
-              <strong>Fullname:</strong>
-              <span>Yash Prajapati</span>
-            </li>
-            <li>
-              <strong>Birth Date:</strong>
-              <span>february 5th, 2002</span>
-            </li>
-            <li>
-              <strong>Portfolio:</strong>
-              <span><a href="https://yash8817.github.io/portfolio.github.io/">https://yash8817.github.io/portfolio.github.io/</a></span>
-            </li>
-            <li>
-              <strong>Email:</strong>
-              <span>
-                <a
-                  href="mailto:prajapatiyash8817@gmail.com"
-                  class="a_normal"
-                  style="color: #6e6e6e">
-                  <p>prajapatiyash8817@gmail.com</p>
-                </a>
-              </span>
-            </li>
-            <li>
-              <strong>Linkedin:</strong>
-              <span>
-                <div class="badge-base LI-profile-badge" data-locale="en_US"
-                  data-size="medium" data-theme="dark" data-type="VERTICAL"
-                  data-vanity="prajapati-yash-700bb4234" data-version="v1"><a
-                    class="badge-base__link LI-simple-link"
-                    href="https://in.linkedin.com/in/prajapati-yash-700bb4234?trk=profile-badge"></a></div>
-              </span>
-            </li>
-          </ul>
-          <!-- /info-list -->
-        </div>
-
-        <div class="col-six tab-full">
-          <h3>Skills</h3>
-          <p>
-            <strong>Languages:</strong><br />
-            <b>English :</b><br />
-            Read, Write, Speak<br />
-            <b>Hindi :</b><br />
-            Read, Write, Speak <br />
-            <b>Gujarati :</b><br />
-            Read, Write, Speak : <i>Mother Tongue</i><br />
-          </p>
-
-          <ul class="skill-bars">
-            <li>
-              <div class="progress percent90"><span>90%</span></div>
-              <strong>python </strong>
-            </li>
-            <li>
-              <div class="progress percent90"><span>90%</span></div>
-              <strong>PHP</strong>
-            </li>
-            <li>
-              <div class="progress percent95"><span>95%</span></div>
-              <strong>MYSQL</strong>
-            </li>
-            <li>
-              <div class="progress percent85"><span>85%</span></div>
-              <strong>CSS</strong>
-            </li>
-            <li>
-              <div class="progress percent60"><span>65%</span></div>
-              <strong>C++</strong>
-            </li>
-          </ul>
-          <!-- /skill-bars -->
-        </div>
-      </div>
-
-      <div class="row button-section">
-        <div class="col-twelve">
-          <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Contact</a>
-          <a
-            href="Yash-Resume.pdf"
-            title="Download resume"
-            class="button button-primary">Download resume</a>
-        </div>
-      </div>
-    </section>
-    <!-- /process-->
-
-    <!-- resume Section
-   ================================================== -->
-    <section id="resume" class="grey-section">
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>Resume</h5>
-          <h2>More of my Credentials</h2>
-        </div>
-      </div>
-      <!-- /section-intro-->
-
-      <div class="row resume-timeline">
-        <div class="col-twelve resume-header">
-          <h2>Education</h2>
-        </div>
-        <!-- /resume-header -->
-
-        <div class="col-twelve">
-          <div class="timeline-wrap">
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-graduation-cap"></i>
-              </div>
-
-              <div class="timeline-header">
-                <h3>Bachelor's Degree</h3>
-                <p>July 2019 - march 2022</p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>
-                  <a href="https://www.somlalitcollege.org">somlalit institute
-                    of computer application</a>
-                </h4>
-                <p>
-                  Currently pursuing BCA. Degree specialization in Computer
-                  Science at somlalit institute of computer application -
-                  ahmedabad.
-                </p>
-              </div>
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/avatars/Yash-image.jpeg" alt="">
             </div>
-            <!-- /timeline-block 1 -->
-
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-graduation-cap"></i>
-              </div>
-
-              <div class="timeline-header">
-                <h3>Schooling</h3>
-                <p>SECONDARY - 2019<br />Percent - 83.4%</p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>
-                  <a href="https://goo.gl/maps/XeXc7UsFmtGNVd5c8">Shree Auro
-                    Niketan high. School</a>
-                </h4>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
                 <p>
-                  Completed my schooling through Gujrat Board at Shree Auro
-                  Niketan high. School - ahmedabad.
+                    Hello, I'm Yash, a highly motivated Software Engineer with practical web development experience. I hold a Bachelor of Computer Application degree from Gujrat University's Somlalit Institute of Computer Applications and currently reside in Bangalore.
                 </p>
-              </div>
-            </div>
-
-            <!-- /timeline-block 2-->
-
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-graduation-cap"></i>
-              </div>
-
-              <div class="timeline-header">
-                <p>ELEMENTARY - 2017<br />Percent - 81.4%</p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>
-                  <a href="https://goo.gl/maps/XeXc7UsFmtGNVd5c8">Shree Auro
-                    Niketan high. School</a>
-                </h4>
                 <p>
-                  Completed my schooling through Gujrat Board at Shree Auro
-                  Niketan high. School - ahmedabad.
+                    As a software engineer with a focus on web development, I bring expertise in AngularJS, JavaScript, jQuery, PHP,
+                    Zend, HTML, and CSS to the table. My training experience and certification as a full-stack developer have honed my
+                    skills in both front-end and back-end development, making me a versatile asset to any project.
                 </p>
-              </div>
-            </div>
 
-            <!-- /timeline-block -->
-          </div>
-          <!-- /timeline-wrap -->
-        </div>
-        <!-- /col-twelve -->
-      </div>
-      <!-- /resume-timeline -->
+                <hr>
 
-      <div class="row resume-timeline">
-        <div class="col-twelve resume-header">
-          <h2>Minor Certification/Achievement</h2>
-        </div>
-        <!-- /project-header -->
-
-        <div class="col-twelve">
-          <div class="timeline-wrap">
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fab fa-hackerrank"></i>
-              </div>
-
-              <div class="timeline-header">
-                <h3>July 21 2019</h3>
-                <p>
-                  site :
-                  <a href="https://www.hackerrank.com">hackerrank</a>
-                </p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>
-                  <a
-                    href="https://www.hackerrank.com/certificates/368245b876bd">SQL(Basic)</a>
-                </h4>
-                <p>
-                  It includes simple queries, relationships, and aggregators.
-                </p>
-              </div>
-            </div>
-            <!-- /timeline-block  -->
-
-            <!-- /timeline-block  2-->
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-google-plus" aria-hidden="true"></i>
-              </div>
-
-              <div class="timeline-header">
-                <h3>January 21 2022</h3>
-                <p>
-                  site : <a
-                    href="https://learndigital.withgoogle.com/digitalgarage/">learndigital.withgoogle</a
-                </p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>
-
-                  <a
-                    href="https://learndigital.withgoogle.com/digitalunlocked/course/digital-marketing">Fundamentals
-                    of digital marketing</a>
-                  <p>
-                    view
-                    <a
-                      href="https://drive.google.com/file/d/1jqnfVOvo_plr5FaNcsFbZVlrgQDDQI5Q/view">
-                      credential</a>
-                  </p>
-                </h4>
-                <p>
-                  This course teaches stepping stone on journey to become a
-                  trusted cybersecurity professional. It introduces to different
-                  types of ethical hackers and ethical hacking tools.
-                </p>
-              </div>
-            </div>
-            <!-- /timeline-block 2 -->
-
-
-
-
-            <!-- /timeline-block  3-->
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-briefcase"></i>
-              </div>
-
-              <div class="timeline-header">
-                <h3>July 21 2021</h3>
-                <p>
-                  site : <a href="https://www.simplilearn.com/">Simplilearn</a>
-                </p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>
-                  <a
-                    href="https://www.simplilearn.com/introduction-to-cloud-computing-basics-skillup">Introduction
-                    to Cloud Computing</a>
-                  <p>
-                    View <a
-                      href="https://drive.google.com/file/d/1FOw8Hqc-uySuGi_IyspgxQd4NaIQvfre/view?usp=sharing">
-                      credential</a>
-                  </p>
-                </h4>
-                <p>
-                  This Cloud Computing course covers basic and advanced concepts
-                  in cloud computing. Explain about cloud architecture,
-                  services, hosting, cloud computing fundamentals, the cloud
-                  computing lifecycle, and key concepts of AWS, Azure, and
-                  Google Cloud Platform
-                </p>
-              </div>
-            </div>
-            <!-- /timeline-block 3 -->
-            <br>
-            <!-- /timeline-block  4-->
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fab fa-hackerrank"></i>
-              </div>
-              <div class="timeline-header">
-                <p>
-                  site : <a href="https://www.hackerrank.com/">hackerrank</a>
-                </p>
-              </div>
-              <div class="timeline-content">
-                <h4>
-                  <a href="https://www.hackerrank.com/prajapatiyash881">
-                    Gold badge for python on HackerRank
-                  </a>
-                </h4>
-              </div>
-            </div>
-            <!-- /timeline-block 4 -->
-            <!-- /timeline-block 3 -->
-            <br>
-            <!-- /timeline-block  5-->
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fab fa-hackerrank"></i>
-              </div>
-              <div class="timeline-header">
-                <p>
-                  site : <a href="https://www.hackerrank.com/">hackerrank</a>
-                </p>
-              </div>
-              <div class="timeline-content">
-                <h4>
-                  <a href="https://www.hackerrank.com/prajapatiyash881">
-                    Gold badge for SQL on HackerRank
-                  </a>
-                </h4>
-              </div>
-            </div>
-            <!-- /timeline-block 5 -->
-
-
-
-            <!-- /timeline-block -->
-          </div>
-          <!-- /timeline-wrap -->
-        </div>
-        <!-- /col-twelve -->
-      </div>
-      <!-- /resume-timeline -->
-    </section>
-    <!-- /features -->
-
-    <!-- Portfolio Section
-   ================================================== -->
-    <section id="portfolio">
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>Portfolio</h5>
-          <h2>Check Out Some of My Projects.</h2>
-
-          <p class="lead">
-            These Projects have helped me develop my Skills and understand the
-            Industry better.
-          </p>
-        </div>
-      </div>
-      <!-- /section-intro-->
-
-      <div class="row portfolio-content">
-        <div class="col-twelve">
-          <!-- portfolio-wrapper -->
-          <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-            <div class="bgrid folio-item">
-              <div class="item-wrap">
-                <img
-                  src="images/portfolio/shivam_car_banner_small.png"
-                  alt="GuestInMe Nightlife Application"
-                  />
-                <a href="#modal-08" class="overlay">
-                  <div class="folio-item-table">
-                    <div class="folio-item-cell">
-                      <h3 class="folio-title">Shivam car service</h3>
-                      <span class="folio-types">
-                        Online car service system
-                      </span>
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Contact Details</h3>
+    
+                        <p>
+                        Yash Prajapati <br>
+                        BTM Layout <br>
+                        Bangalore, Karnataka <br>
+                        <a href="tel:+919537496805">+91 95374 96805</a> <br>
+                        <a href="mailto:prajapatiyash8817@gmail.com">prajapatiyash8817@gmail.com</a>
+                        </p>
+                        
                     </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- /folio-item -->
-
-            <!-- copy -->
-            <div class="bgrid folio-item">
-              <div class="item-wrap">
-                <img
-                  src="images/portfolio/crud_application_poster.jpg"
-                  alt="crud application"
-                  />
-                <a href="#modal-07" class="overlay">
-                  <div class="folio-item-table">
-                    <div class="folio-item-cell">
-                      <h3 class="folio-title">Simple crud application</h3>
-                      <span class="folio-types">
-                        login system with php mysqli
-                      </span>
+                    <div class="column w-1000-stack">
+                        <a href="Yash-Prajapati-Resume.pdf" class="btn btn--download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                            viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                            <path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path>
+                            <path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z">
+                            </path></svg>
+                            Download CV
+                        </a>
                     </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- /folio-item 2-->
-
-
-            <!-- copy -->
-            <div class="bgrid folio-item">
-              <div class="item-wrap">
-                <img
-                  src="images/portfolio/infinite-scroll-project-poster.jpg"
-                  alt="crud application"
-                  />
-                <a href="#modal-06" class="overlay">
-                  <div class="folio-item-table">
-                    <div class="folio-item-cell">
-                      <h3 class="folio-title">Infinite scrolling project</h3>
-                      <span class="folio-types">
-                        Load data as you scroll
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- /folio-item 3-->
-
-
-
-            <!-- copy -->
-            <div class="bgrid folio-item">
-              <div class="item-wrap">
-                <img
-                  src="images/portfolio/online-chatting-system-banner-2.jpg"
-                  alt="crud application"
-                  />
-                <a href="#modal-05" class="overlay">
-                  <div class="folio-item-table">
-                    <div class="folio-item-cell">
-                      <h3 class="folio-title">Real Time Chat system</h3>
-                      <span class="folio-types">
-                        Chat with frined in real time
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- /folio-item 4-->
-
-
-            <!-- modal popups - begin
-	            ============================================================= -->
-            <div id="modal-08" class="popup-modal slider mfp-hide">
-              <div class="media">
-                <img
-                  src="images/portfolio/shivam_car_banner.png"
-                  alt="GuestInMe App"
-                  />
-              </div>
-
-              <div class="description-box">
-                <h4>Shivam car service</h4>
-                <p>
-                  Shivam car service provides a platform to book a car service
-                  easily, keeping long wait out of the picture. website allow
-                  customers to schedule an appointment on available date and
-                  time and take service without visiting the garage.
-                </p>
-                <div class="categories">
-                  Language Used: Php 7.4.0 <br />
-                  Backend: MySQL 8.0
                 </div>
-              </div>
-              <div class="link-box">
-                <a href="https://github.com/Yash8817/shivam-car-service.git">github</a>
-                <a href="#" class="popup-modal-dismiss">Close</a>
-              </div>
             </div>
+        </div> <!-- end row -->
 
-            <!-- copy -->
-            <div id="modal-07" class="popup-modal slider mfp-hide">
-              <div class="media">
-                <img
-                  src="images/portfolio/crud_application_poster.jpg"
-                  alt="Show World Film Directory App"
-                  />
-              </div>
+    </section> <!-- end s-about -->
 
-              <div class="description-box">
-                <h4>Simple crud application</h4>
-                <p>
-                  CRUD Operations are typically performed on databases, hence,
-                  in this PHP CRUD Operations tutorial, you will implement CRUD
-                  techniques on MySQL databases with the help of PHP. The CRUD
-                  acronym comprises all the major operations that are performed
-                  on a relational database. It stands for: C = Create R = Read U
-                  = Update D = Delete
-                </p>
-                <div class="categories">php</div>
-              </div>
-              <div class="link-box">
-                <a href="https://github.com/Yash8817/crud-application.git">github</a>
-                <a href="#" class="popup-modal-dismiss">Close</a>
-              </div>
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Career</h3>
             </div>
-            <!-- copy -->
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
 
-            <!-- copy -->
-            <div id="modal-06" class="popup-modal slider mfp-hide">
-              <div class="media">
-                <img
-                  src="images/portfolio/infinite-scroll-project-poster.jpg"
-                  alt="infinite scroll project"
-                  />
-              </div>
+                    <div class="resume-block__header">
+                        <h4 class="h3">Medgenome</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Software Developer Trainee</span> 
+                            <span class="resume-block__header-date">
+                                Dec 2022 - Present
+                            </span>
+                        </p>
+                    </div>
 
-              <div class="description-box">
-                <h4>Infinite scrolling project</h4>
-                <p>
-                  Infinite scrolling is a web-design technique that loads
-                  content continuously as the user scrolls down the page,
-                  eliminating the need for pagination.It also provides a great
-                  learning experience on how to develop an API that can return
-                  database content into the front end. Learn how to combine
-                  technologies and the steps needed to plan out the building of
-                  applications. Explore how we can use AJAX to send requests to
-                  a server API returning content in a JSON format to be added to
-                  your web page content.
-                </p>
-                <div class="categories">API with PHP</div>
-              </div>
-              <div class="link-box">
-                <a href="https://github.com/Yash8817/infinte-sroll.git">github</a>
-                <a href="#" class="popup-modal-dismiss">Close</a>
-              </div>
+                    <p>
+                        • Collaborated with experienced developers to modify and optimize existing codebase for improved functionality and
+                        performance.
+                        <br>
+                        • Proficiently troubleshooted and resolved software defects, ensuring top-notch application delivery. Additionally,
+                        instrumental in enhancing functionality by developing and integrating new modules.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Kodnest</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Full-stack Developer</span> 
+                            <span class="resume-block__header-date">
+                                Jul 2022 – Dec 2023
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    full stack certification program, providing industry-level training to enhance skills in Python, Java, MySQL and
+                    software testing.
+                    </p>
+
+                </div> <!-- end resume-block -->
             </div>
-            <!-- copy -->
+        </div> <!-- s-resume__section -->
 
-            <!-- copy -->
-            <div id="modal-05" class="popup-modal slider mfp-hide">
-              <div class="media">
-                <img
-                  src="images/portfolio/online-chatting-system-banner-2.jpg"
-                  alt="onlie chatt system App"
-                  />
-              </div>
-              <div class="description-box">
-                <h4>Real Time Chat system</h4>
-                <p>
-                  User Chat System Using PHP along with AJAX and using MYSQLi
-                  database. Making front end in HTML and designing in CSS makes
-                  this chat room even more attractive and beautiful.
-                </p>
-                <div class="categories">php</div>
-              </div>
-              <div class="link-box">
-                <a href="https://github.com/Yash8817/chat-system.git">github</a>
-                <a href="#" class="popup-modal-dismiss">Close</a>
-              </div>
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Education</h3>
             </div>
-            <!-- copy -->
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
 
-            <!-- modal popups - end
-	            ============================================================= -->
-          </div>
-          <!-- /portfolio-wrapper -->
+                    <div class="resume-block__header">
+                        <h4 class="h3">Gujarat University, Gujarat,</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Bachelor of Computer Applications (BCA)</span> 
+                            <span class="resume-block__header-date">
+                                May 2023
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        I hold a Bachelor of Computer Applications (BCA) degree from Gujarat University, which I completed in 2022. During the three-year program, I studied a range of subjects, including database management, web development, object-oriented programming, data structures and algorithms, and software engineering. 
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Skills</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <p>
+                        I have a range of skills that cover programming languages such, as Java, Python, JavaScript, AngularJS, JQuery, PHP and Zend. When it comes to web development I am skilled in HTML, CSS, JavaScript, Django and PHP. I also have expertise in managing databases with a focus on MySQL SQL query optimization and database design. Furthermore I am familiar with version control systems like Git and SVN. Alongside this knowledge base are my understanding of algorithms and data structures as experience, in Linux environments debugging and object oriented programming principles.
+                    </p>
+
+                    <ul class="skill-bars-fat">
+                        <li>
+                            <div class="progress percent80"></div>
+                            <strong>JavaScript</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent90"></div>
+                            <strong>AngujarJS</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent70"></div>
+                            <strong>JQuery</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent55"></div>
+                            <strong>Java</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent70"></div>
+                            <strong>Python</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent85"></div>
+                            <strong>PHP</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent80"></div>
+                            <strong>MySQL</strong>
+                        </li>
+                        
+                    </ul>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h3>A Few Of My Latest Creations</h3>
+            </div>
         </div>
-        <!-- /twelve -->
-      </div>
-      <!-- /portfolio-content -->
-    </section>
-    <!-- /portfolio -->
 
-    <!-- stats Section
-   ================================================== -->
-    <section id="stats" class="count-up">
-      <div class="row">
-        <div class="col-twelve">
-          <div
-            class="block-1-3 block-s-1-3 block-tab-1-2 block-mob-full
-            stats-list">
-            <div class="bgrid stat">
-              <div class="icon-part">
-                <!-- <i class="icon-edit"></i> -->
-              </div>
+        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
 
-              <h3 class="stat-succ">Listen</h3>
+            <div class="column folio-item">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="images/portfolio/shivam_car_banner.jpg" 
+                         srcset="images/portfolio/shivam_car_banner.jpg 1x, 
+                                 images/portfolio/shivam_car_banner.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="images/portfolio/javascript.jpg" 
+                         srcset="images/portfolio/javascript.jpg 1x, 
+                                 images/portfolio/javascript.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img src="images/portfolio/react-mame-gen.jpg" 
+                         srcset="images/portfolio/react-mame-gen.jpg 1x, 
+                                 images/portfolio/react-mame-gen.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="images/portfolio/insta-clone.jpg" 
+                         srcset="images/portfolio/insta-clone.jpg 1x, 
+                                 images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-05" class="folio-item__thumb">
+                    <img src="images/portfolio/e-shop.jpg" 
+                         srcset="images/portfolio/e-shop.jpg 1x, 
+                                 images/portfolio/e-shop.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-06" class="folio-item__thumb">
+                    <img src="images/portfolio/online-learing.jpg" 
+                         srcset="images/portfolio/online-learing.jpg 1x, 
+                                 images/portfolio/online-learing.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+           
+
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/shivam_car.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Shivam car service</h5>
+                    <p>Shivam car service provides a platform to book a car service easily, A paperless appointment system that eliminates waiting in long lines by converting the appointment approach to an online one.</p>
+                    <ul class="modal-popup__cat" >
+                        <li>Technologies : PHP, MySQL, jQuery, JavaScript, Bootstrap, Tailwind CSS.</li>
+                    </ul>
+                </div>
+    
+                <a href="https://github.com/Yash8817/shivam-car-service" class="modal-popup__details">Project link</a>
             </div>
-            <!-- /stat -->
+        </div> <!-- end modal -->
 
-            <div class="bgrid stat">
-              <div class="icon-part">
-                <!-- <i class="icon-cup"></i> -->
-              </div>
-
-              <h3 class="stat-succ">think</h3>
-
-              <h5 class="stat-title"></h5>
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/javascript.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Tab Acriver - Chrome Extension</h5>
+                    <p>This Chrome extension, built using JavaScript, offers a seamless way to delve into its inner workings, allowing you to understand its functionalities and capabilities.</p>
+                    <ul class="modal-popup__cat">
+                        <li>JavaScript, Html, Css</li>
+                    </ul>
+                </div>
+    
+                <a href="https://github.com/Yash8817/TabArchive-js-chrome-extension" class="modal-popup__details">Project link</a>
             </div>
-            <!-- /stat -->
+        </div> <!-- end modal -->
 
-            <div class="bgrid stat">
-              <div class="icon-part">
-                <!-- <i class="icon-clock"></i> -->
-              </div>
-
-              <h3 class="stat-succ">implement</h3>
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/react-meme-gen.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Meme Generator using ReactJs</h5>
+                    <p> React-powered Meme Generator – a fun project I built while learning React. Create and share memes effortlessly</p>
+                    <ul class="modal-popup__cat">
+                        <li>React, html, css</li>
+                    </ul>
+                </div>
+    
+                <a href="https://github.com/Yash8817/meme-generator" class="modal-popup__details">Project link</a>
             </div>
-            <!-- /stat -->
-          </div>
-          <!-- /stats-list -->
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/instagram-clone.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>instagram clone </h5>
+                    <p>PHP-based Instagram Clone project. Dive into the world of web development as I recreate the Instagram experience, one line of code at a time</p>
+                    <ul class="modal-popup__cat">
+                        <li>php, html, css, javascript</li>
+                    </ul>
+                </div>
+    
+                <a href="https://github.com/Yash8817/social-media-django" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-05" hidden>
+            <div class="modal-popup">
+
+                <img src="images/portfolio/gallery/e-shop.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>E-commerce Application using Django, Python</h5>
+                    <p> E-commerce Application, powered by Python Django and integrated with the Razor payment gateway</p>
+                    <ul class="modal-popup__cat">
+                        <li>Django, Python, payment gateway, css</li>
+                    </ul>
+                </div>
+    
+                <a href="https://github.com/Yash8817/E-commerce-django" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-06" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/online-learing.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Online Learning Portal</h5>
+                    <p>Online Learning Portal, which I developed as a means to learn Python Django with payment gateway and user authentication integrated</p>
+                    <ul class="modal-popup__cat">
+                        <li>Django, Python, payment gateway, user authentication</li>
+                        
+                    </ul>
+                </div>
+    
+                <a href="https://github.com/Yash8817/Code-With-Me" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        
+
+
+    </section> <!-- end s-portfolio -->
+
+
+
+
+
+    <!-- testimonials
+    <section id="testimonials" class="s-testimonials target-section">
+
+        <div class="s-testimonials__bg"></div>
+
+        <div class="row s-testimonials__header">
+            <div class="column large-12">
+                <h3>Hear What My Clients Says</h3>
+            </div>
         </div>
-        <!-- /twelve -->
-      </div>
-      <!-- /row -->
-    </section>
-    <!-- /stats -->
+
+        <div class="row s-testimonials__content">
+
+            <div class="column">
+
+                <div class="swiper-container testimonial-slider">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Tim Cook</strong>
+                                    <span>CEO, Apple</span>
+                                </cite>
+                            </div>
+                            <p>
+                            Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                            Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
+                            Laudantium quia consequatur molestias delectus culpa.
+                            </p>
+                        </div> 
+        
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Sundar Pichai</strong>
+                                    <span>CEO, Google</span>
+                                </cite>
+                            </div>
+                            <p>
+                            Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                            Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                            Quasi voluptas eius distinctio. Atque eos maxime.
+                            </p>
+                        </div> 
+        
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Satya Nadella</strong>
+                                    <span>CEO, Microsoft</span>
+                                </cite>
+                            </div>
+                            <p>
+                            Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                            Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                            Voluptatem dignissimos ut.
+                            </p>
+                        </div> 
+
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Jeff Bezos</strong>
+                                    <span>CEO, Amazon</span>
+                                </cite>
+                            </div>
+                            <p>
+                            Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
+                            quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
+                            Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                            </p>
+                        </div> 
+    
+                    </div> 
+
+                    <div class="swiper-pagination"></div>
+
+                </div> 
+
+            </div> 
+
+        </div> 
+
+    </section> end s-testimonials -->
+
 
     <!-- contact
-   ================================================== -->
-    <section id="contact">
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>Contact</h5>
-          <h2>I'd Love To Hear From You.</h2>
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
 
-          <p class="lead">Feel free to Contact Me:</p>
-        </div>
-      </div>
-      <!-- /section-intro -->
-
-      <div class="row contact-form">
-        <div class="col-twelve">
-          <!-- form -->
-          <!-- action="https://formspree.io/f/mdobyear" -->
-          <form name="form" id="contactForm" method="POST" data-netlify="true">
-            {% csrf_token %}
-            <fieldset><div class="form-field">
-                <input name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" />
-              </div>
-              <div class="form-field">
-                <input 
-                  name="user_email"
-                  type="email"
-                  id="contactEmail"
-                  placeholder="Email"
-                  value=""
-                  required=""
-                  />
-              </div>
-              <div class="form-field">
-                <input
-                  name="Subject"
-                  type="text"
-                  id="contactSubject"
-                  placeholder="Subject"
-                  value=""
-                  />
-              </div>
-              <div class="form-field">
-                <textarea
-                  name="message"
-                  id="contactMessage"
-                  placeholder="message"
-                  rows="10"
-                  cols="50"
-                  required=""></textarea>
-              </div>
-              <div class="form-field">
-                <button class="submitform" name="submit" type="submit">Submit</button>
-                <div id="submit-loader">
-                  <div class="text-loader">Sending...</div>
-                  <div class="s-loader">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-          </form>
-
-          <!-- contact-warning -->
-          <div id="message-warning"></div>
-          <!-- contact-success -->
-          <div id="message-success">
-            <i class="fa fa-check"></i>Your message was sent, thank you!<br />
-          </div>
-        </div>
-        <!-- /col-twelve -->
-      </div>
-      <!-- /contact-form -->
-
-      <div class="row contact-info">
-        <div class="col-four tab-full">
-          <div class="icon">
-            <i class="icon-pin"></i>
-          </div>
-
-          <h5>Where to find me</h5>
-
-          <p>
-            <a
-              href="https://goo.gl/maps/AGL7HGGirY6tCyyc7"
-              class="a_normal"
-              style="color: #6e6e6e">
-              6th Main Road,Stage 2, BTM Layout, Bengaluru, Karnataka
-            </a>
-          </p>
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Say Hello</h3>
+            </div>
         </div>
 
-        <div class="col-four tab-full collapse">
-          <div class="icon">
-            <i class="icon-mail"></i>
-          </div>
+        <div class="row s-contact__content">
 
-          <h5>Email Me At</h5>
-          <a
-            href="mailto:prajapatiyash8817@gmail.com"
-            class="a_normal"
-            style="color: #6e6e6e">
-            <p style="color: #6e6e6e">prajapatiyash8817@gmail.com</p>
-          </a>
-        </div>
+            <div class="column large-7 medium-12">
 
-        <div class="col-four tab-full">
-          <div class="icon">
-            <i class="icon-phone"></i>
-          </div>
+                <h4 class="huge-text">
+                Have a new project in mind? or Looking for talent? Reach out and let's discuss how I can contribute to your team  :)
+                </h4>
 
-          <h5>Connect Me At</h5>
+            </div>
 
-          <p>
-            Phone:<a href="tel:9537496805" style="color: #6e6e6e">Direct call</a>
-            <br/>
-            </p>
-            <p>
-              whatsapp:
-              <a href="https://api.whatsapp.com/send?phone=919537496805"
-                style="color: #6e6e6e"> whatsapp</a>
-            </p>
-          </div>
-        </div>
-        <!-- /contact-info -->
-      </section>
-      <!-- /contact -->
+            <div class="column large-4 medium-12">
 
-      <!-- footer ================================================== -->
-      <footer>
+                <div class="row contact-infos">
+                    <div class="column  medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Email
+                            </h5>
+                            <p class="contact-block__content">
+                                <a class="mailtoui" href="mailto:prajapatiyash8817@gmail.com">prajapatiyash8817@gmail.com</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Phone
+                            </h5>
+                            <p class="contact-block__content">
+                                <a href="tel:+919537496805">+91 95374 96805</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+
+                    <div class="column large-12">
+                        <a href="mailto:prajapatiyash8817@gmail.com" class="mailtoui btn btn--primary h-full-width">Let's Talk</a>
+                    </div>
+                </div> <!-- end contact-infos -->
+
+            </div>
+        </div> <!-- s-contact__content -->
+
+    </section> <!-- end s-contact -->
+    
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
         <div class="row">
-          <div id="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa
-                fa-long-arrow-up"></i></a>
-          </div>
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    
+                    <li><a href="https://www.linkedin.com/in/prajapatiyash/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/yash8817"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://medium.com/@prajapatiyash8817"><i class="fab fa-medium" aria-hidden="true"></i></a></li>
+                    <li><a href="https://stackoverflow.com/users/15392294/prajapati-yash"><i class="fab fa-stack-overflow" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/yash_8817"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                
+                </ul>
+            </div>
+
+            <!-- <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Copyright Ceevee 2021</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div> -->
         </div>
-        <!-- /row -->
-      </footer>
 
-      <div id="preloader">
-        <div id="loader"></div>
-      </div>
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
 
-      <!-- Java Script
-   ================================================== -->
-      <script src="js/jquery-2.1.3.min.js"></script>
-      <script src="js/plugins.js"></script>
-      <script src="js/main.js"></script>
-    </body>
-  </html>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
